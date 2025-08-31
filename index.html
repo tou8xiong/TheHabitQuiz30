@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <title>indexpage</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="logo2.png">
+</head>
+<style>
+    body {
+        background-image: url(indexpagebackground.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .start {
+        display: flex;
+        justify-content: center;
+        border: 0px solid;
+    }
+
+    .start a {
+        font-size: 30px;
+        border: 0px solid;
+        padding-inline: 50px;
+        padding-block: 14px;
+        background-color: chocolate;
+        text-decoration: none;
+        color: black;
+        border-radius: 10px;
+        margin-top: auto;
+        box-shadow: 1px 2px 3px 1px #000000;
+    }
+
+    .start a:hover {
+        background-color: rgba(210, 105, 30, 0.66);
+        font-size: 32px;
+    }
+
+    .image4 {
+        max-width: 500px;
+        height: auto;
+        border: 0px solid;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    .logo2 {
+        max-width: 160px;
+        height: 130px;
+        border: 0px solid rgb(0, 8, 255);
+        margin-left: 0px;
+        border-radius: 50%;
+        margin-top: 20px;
+        background: linear-gradient(100deg, #00c6ff, #ff0000);
+    }
+
+    .text p {
+        -webkit-text-stroke: 2px rgba(0, 0, 0, 0.66);
+        font-size: 50px;
+        margin-right: 100px;
+        height: 100px;
+        padding-block-end: 30px;
+        font-weight: bold;
+        white-space: nowrap;
+        border-radius: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        background: linear-gradient(90deg, #fff200, #ff0000, #00c6ff);
+        background-clip: text;
+        background-size: 200%;
+        color: transparent;
+        margin-left: -180px;
+        border: 0px solid black;
+        animation: text-animation 2s infinite linear;
+
+    }
+
+    @keyframes text-animation {
+        0% {
+            background-position: 0%;
+        }
+        100% {
+            background-position: 200%;
+        }
+    }
+
+    #ideaconcept {
+        border: 0px solid black;
+        width: 700px;
+        position: absolute;
+        top: 400px;
+        right: 100px;
+        padding: 10px;
+        font-size: 20px;
+        background-color: azure;
+        border-radius: 9px;
+        box-shadow: 4px 5px 5px 2px rgb(0, 0, 0);
+
+    }
+
+    .logo-textname {
+        display: flex;
+        flex-direction: column;
+        border: 0px solid;
+        padding-right: 50px;
+        height: 400px;
+        width: 180px;
+    }
+
+    .text {
+        border: 0px solid;
+        display: flex;
+        width: 700px
+    }
+
+    .logo-textname span {
+        font-size: 17px;
+        font-weight: bold;
+        margin-top: 10px;
+        font-family: cursive;
+        border: 0px solid;
+        width: 200px;
+    }
+
+    @media (max-width: 600px) and (min-width: 280px) {
+        body {
+            height: 100ch;
+        }
+
+        .start {
+            height: 100ch;
+            margin: 2px;
+            border: 1px solid;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .start a {
+            font-size: 20px;
+            border: 0px solid;
+            padding-inline: 80px;
+            padding-block: 17px;
+            background-color: chocolate;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            border-radius: 10px;
+            margin-top: auto;
+            box-shadow: 1px 2px 3px 1px #000000;
+            margin-bottom: 0px;
+            
+        }
+
+        .start a:active {
+            background-color: rgba(210, 105, 30, 0.66);
+            font-size: 21px;
+        }
+
+        .image4 {
+            max-width: 360px;
+            height: 300px;
+            border: 0px solid;
+            margin-top: 200px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 0px;
+        }
+
+        .logo2 {
+            max-width: 40px;
+            height: 30px;
+            border: 0px solid rgb(0, 8, 255);
+            margin-left: 0px;
+            border-radius: 50%;
+            margin-top: 20px;
+            background: linear-gradient(100deg, #00c6ff, #ff0000);
+        }
+
+        .text p {
+            -webkit-text-stroke: 2px rgba(0, 0, 0, 0.66);
+            font-size: 20px;
+            height: fit-content;
+            padding-block-end: 30px;
+            font-weight: bold;
+            white-space: nowrap;
+            border-radius: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            background: linear-gradient(90deg, #fff200, #ff0000, #00c6ff);
+            background-clip: text;
+            background-size: 200%;
+            color: transparent;
+            border: 0px solid rgb(0, 255, 30);
+            animation: text-animation 2s infinite linear;
+            margin-left: 100px;
+        }
+
+        .logo-textname {
+            border: 0px solid red;
+            width: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            height: fit-content;
+            align-items: center;
+        }
+
+        .text {
+            border: 0px solid;
+            width: 600px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            height: fit-content;
+            background-color: aliceblue;
+            border-radius: 10px;
+            margin-top: -750px;
+        }
+
+        .logo-textname span {
+            font-size: 17px;
+            font-weight: bold;
+            margin-top: 10px;
+            font-family: cursive;
+            border: 0px solid;
+            width: 170px;
+            flex-wrap: wrap;
+        }
+
+        #ideaconcept {
+            border: 0px solid black;
+            width: 240px;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 12px;
+            right: 10px;
+            top: 500px;
+            background-color: azure;
+            border-radius: 9px;
+        }
+
+
+    }
+</style>
+
+<body>
+
+    <div class="start"><img src="image4.png" alt="3d cartoon" class="image4" data-aos="fade-up-right">
+        <a href="form-login.html">Register to Play</a>
+        <div class="text">
+            <p data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">Wellcome to The <br> Habit
+                Challenge Quiz Game</p>
+            <div class="logo-textname">
+                <img src="logo2.png" alt="logo" class="logo2"><span>The Habit Challenge</span>
+            </div>
+
+        </div>
+        <div id="ideaconcept">
+            <div id="content-text">The Habit Challenge is a fun and interactive way to discover your daily habits
+                and
+                improve your lifestyle step by step. Through 30 quick questions, you will explore your routines,
+                reflect
+                on your choices, and get personalized suggestions to build healthier and more positive habits. Ready
+                to
+                take the challenge and unlock your best self?</div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

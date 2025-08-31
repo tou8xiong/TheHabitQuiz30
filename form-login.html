@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-singin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script type="module" src="firebase.js"></script>
+    <link rel="icon" href="logo2.png">
+    <style>
+        body {
+            background: linear-gradient(100deg, #24e05677, #24d8f0, #ceb81270);
+        }
+
+        .contiamer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            border: 0px solid;
+            align-items: center;
+
+        }
+
+        .contiamer p {
+            font-size: 20px;
+            margin-right: 10px;
+            margin-top: 30px;
+            font-weight: bold;
+            background-color: rgb(0, 0, 0);
+            height: 45px;
+            color: white;
+            padding: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 10px;
+        }
+
+        #form-position {
+            border: 0px solid;
+            padding: 24px;
+            display: flex;
+            margin-top: 100px;
+            flex-wrap: wrap;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.83);
+        }
+
+        #register-form {
+            font-size: 20px;
+            padding: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #displaybtn {
+            float: right;
+            margin-right: 159px;
+            display: none;
+        }
+
+        #displaybtn a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #displaybtn p {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+
+        #register-form button {
+            background-color: rgb(11, 233, 22);
+            border-radius: 5px;
+        }
+
+        #register-form button:hover {
+            background-color: rgba(0, 0, 0, 0.367);
+        }
+
+        #next {
+            color: azure;
+            padding:
+                10px 25px;
+            border-radius: 7px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(255, 0, 0);
+        }
+
+        #next:hover {
+            background-color: rgba(151, 42, 42, 0.559);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contiamer">
+        <p>Register to sign-in</p>
+        <div id="form-position">
+            <form id="register-form">
+                <label>Email</label><br>
+                <input type="text" placeholder="Email" name="email"><br><br>
+                <label>password</label><br>
+                <input type="password" placeholder="password" name="password"><br><br>
+                <button id="btnregiste">Summit</button>
+            </form>
+        </div>
+    </div>
+    <div id="displaybtn">
+        <p id="wellcome"></p>
+        <button id="next"><a href="inguzze.html">Next</a></button>
+    </div>
+    <img src="image5forregisteringpage.png" style="margin-left: 0px;" alt="3dcrtoon" width="370px" height="290px">
+</body>
+
+</html>
